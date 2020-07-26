@@ -8,7 +8,7 @@ import colored
 from colored import stylize
 
 
-basedir = "B:/TV Shows/"
+basedir = "Y:/.youtube-dl-folder/Anime/"
 for folder in os.listdir(basedir):
     x = os.listdir(basedir + folder + "/")
     vttFolder = "vtt"
@@ -19,7 +19,7 @@ for folder in os.listdir(basedir):
         os.mkdir(basedir + folder + "/vtt/")  #  creates the temp vtt folder
 
     for n in x:
-        if "en.ass" in n or "en.srt" in n:  #  en.srt is not looked at due to no "Dialogue" being inside the file
+        if "en.ass" in n:  #  en.srt is not looked at due to no "Dialogue" being inside the file
             file = n
             fhand = open(basedir + folder + "/" + n)
             try:
