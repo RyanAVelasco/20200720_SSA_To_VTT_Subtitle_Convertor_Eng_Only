@@ -8,7 +8,7 @@ import colored
 from colored import stylize
 
 
-basedir = "Y:/.youtube-dl-folder/Anime/"
+basedir = "A:/Movies/"
 for folder in os.listdir(basedir):
     x = os.listdir(basedir + folder + "/")
     vttFolder = "vtt"
